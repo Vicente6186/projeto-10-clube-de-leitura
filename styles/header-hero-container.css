@@ -1,0 +1,8 @@
+#header-hero-container{
+    background: url(../assets/images/hero-background.png) no-repeat center/cover;
+    animation: hero 1s ;
+}
+
+@keyframes hero {
+    from { background-position-y: -100vh; }
+}

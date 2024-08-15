@@ -1,0 +1,61 @@
+footer {
+    padding-block: 17rem 12rem;
+    background: url(../assets/images/book-trace-background.png) center top/cover;
+    
+    
+    & > div{
+        display: flex;
+        gap: 5.6rem;
+        width: min(100rem, 100% - 2rem);
+        margin-inline: auto;
+        color: var(--blue-light);
+        
+
+        
+        & nav:nth-child(1){
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            
+            & div {
+                display: flex;
+                & a {
+                    padding: 8px;
+                    transition: background-color .5s;
+                    border-radius: 50%;
+                    &:hover {
+                        background-color: var(--blue-dark); 
+                    }
+                }
+                
+            }
+        }
+        
+        & nav:nth-child(2), nav:nth-child(3){
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            
+            & a {transition: color .5s;}
+            
+            & a:hover{
+                color: var(--text-title);
+            }
+        }
+        
+    }
+}
+
+@media (width < 1280px) {
+    footer div{
+        flex-direction: column;
+
+        & nav:nth-child(1) {
+            margin-inline: auto;
+            & div {
+                flex-direction: row;
+            }
+        }
+    }
+}

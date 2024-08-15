@@ -1,0 +1,21 @@
+#hero {
+    text-align: center;
+    padding-block: 16.4rem 47rem;
+    width: min(112rem, 100% - 2rem);
+    margin-inline: auto;
+   
+    & p { 
+        font: var(--body-lg); 
+        margin-top: 3.2rem; 
+    }
+
+}
+
+@media (width < 1280px) {
+    #hero {
+        & p {
+            font: var(--body-sm);
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+.btn-primary{
+    padding: 1.2rem 2rem;
+    border-radius: .8rem;
+    background-color: var(--pink-dark);
+    color: var(--text-title);
+    transition: background-color 0.5s;
+    border: none;
+
+    &:hover {
+        background-color: var(--pink-base);
+    }
+}
+
+.btn-secondary{
+    padding: 1.2rem 2rem;
+    border-radius: .8rem;
+    background-color: var(--blue-dark);
+    color: var(--text-title);
+    transition: background-color 0.5s;
+    border: none;
+
+    &:hover {
+        background-color: var(--blue-mid);
+    }
+}
+
+.btn-block{
+    width: 100%;
+}
